@@ -1,36 +1,7 @@
-<<<<<<< HEAD
 
+# Motion Triggered CCTV Recognition System
 
-```markdown
-# 📹 Motion Triggered CCTV Recognition System
-
-A Python-based smart CCTV system that uses a webcam to detect motion (faces or bodies) using OpenCV. When motion is detected, it records a video clip and saves it with a timestamp. The recording stops after a few seconds of no motion being detected.
-
----
-
-## 🧠 Features
-
-- 🔍 **Real-time face and body detection** using Haar Cascade classifiers  
-- 🎥 **Automatic video recording** on motion detection  
-- ⏱ **5-second post-detection delay** before stopping the recording  
-- 💾 **Saves videos with timestamped filenames**  
-- 🖼 **Visual feedback** with rectangles around detected objects  
-- 🧪 Built with OpenCV for computer vision tasks  
-
----
-
-## 📁 Project Structure
-
-```
-
-motion-triggered-cctv/
-│
-├── CCTV.py               # Main script for detection and recording
-├── utils.py              # Utility for folder creation
-├── recorded\_videos/      # Output directory (auto-created if not present)
-└── README.md             # Project documentation
-
-````
+This is a real-time motion detection and recording system built using Flask, OpenCV, and HTML5 video streaming. The app captures live video from your system's webcam, detects human motion using face and full-body classifiers, and automatically records short clips when movement is detected.
 
 ---
 
@@ -102,6 +73,4 @@ Videos are saved in `recorded_videos/`.
 
 
 =======
-# motion-triggered-cctv
-This is a real-time motion detection and recording system built using Flask, OpenCV, and HTML5 video streaming. The app captures live video from your system's webcam, detects human motion using face and full-body classifiers, and automatically records short clips when movement is detected.
->>>>>>> 3fed335decec5d15b853ed74eca25278a60fcea1
+

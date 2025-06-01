@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motion Triggered CCTV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Motion Triggered CCTV Recorder</h1>
+
+    
+
+    <div>
+        <img src="{{ url_for('video_feed') }}" id="video-feed" width="800">
+    </div>
+
+    <br>
+
+    <div>
+        <button onclick="startDetection()">Start Detection</button>
+        <button onclick="stopDetection()">Stop Detection</button>
+    </div>
+
+    <script>
+        function startDetection() {
+            fetch('/start', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.status); // Optional feedback
+                });
+        }
+
+        function stopDetection() {
+            fetch('/stop', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.status); // Optional feedback
+                });
+        }
+    </script>
+</body>
+</html>

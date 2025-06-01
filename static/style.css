@@ -1,0 +1,78 @@
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 2em;
+    color: #00ffcc;
+}
+
+#video-container {
+    margin: 40px auto;
+    max-width: 500px;
+    min-height: 360px;
+    border: 5px solid #00ffcc;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+    overflow: hidden;
+    background-color: #000;
+}
+
+#video-feed {
+    width: 480px;
+    height: 360px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 2px solid red; /* Remove this after debugging */
+}
+
+#controls {
+    margin: 20px auto;
+}
+
+button {
+    background-color: #00ffcc;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 8px;
+    color: #121212;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cc99;
+}
+
+p {
+    font-size: 1em;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #video-container {
+        margin: 20px auto;
+        border-width: 3px;
+        max-width: 90%;
+    }
+
+    #video-feed {
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+}
